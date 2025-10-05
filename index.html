@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness 365</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <!-- swiper cdn link from swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header sticky">
+        <a href="#home"><img src="Images/Gym LOGO.png" alt="logo" class="logo"></a>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="#home">home</a></li>
+                <li><a class="navbar-link" href="#about">about</a></li>
+                <li><a class="navbar-link" href="#features">features</a></li>
+                <li><a class="navbar-link" href="#pricing">pricing</a></li>
+                <li><a class="navbar-link" href="#team">team</a></li>
+                <li><a class="navbar-link" href="#blogs">blogs</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <i class="fa-solid fa-bars" name="menu-outline"></i>
+            <i class="fa-solid fa-xmark" name="close-outline"></i>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+
+        <div class="swiper home-slider"> <!-- swiper class is added from swiper.js  -->
+
+            <div class="swiper-wrapper"> <!-- swiper-wrapper class is added from swiper.js  -->
+
+                <div class="swiper-slide slide" style="background: url(Images/home-bg-1.jpg) no-repeat;">
+                    <!-- swiper-slide class is added from swiper.js  -->
+                    <div class="content">
+                        <span><i class="fa-solid fa-dumbbell"></i> TRANSFORM YOUR BODY</span>
+                        <h3>THE JOURNEY TO A HEALTHIER YOU BEGINS TODAY</h3>
+                        <a href="#" class="btn">JOIN US TODAY</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(Images/home-bg-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span><i class="fa-solid fa-dumbbell"></i> TRANSFORM YOUR BODY</span>
+                        <h3>GET YOUR PERFECT WORKOUT WITH THE PERFECT TRAINERS</h3>
+                        <a href="#" class="btn">JOIN US TODAY</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span><i class="fa-solid fa-dumbbell"></i> TRANSFORM YOUR BODY</span>
+                        <h3>START YOUR YOGA JOURNEY NOW</h3>
+                        <a href="#" class="btn">JOIN US TODAY</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="Images/about-img.jpg" alt="About Image">
+        </div>
+
+        <div class="content">
+            <span>About Us</span>
+            <h3 class="title" id="about-title">Lift with confidence, Sweat with purpose</h3>
+            <p>
+                The moment you step into <b>Fitness 365</b> you will be inspired to push a little harder,
+                sweat a little longer, and believe in yourself a little more. With each day, you will lift with
+                confidence and sweat with purpose alongside a community that's here to support you - no matter what.
+            </p>
+            <div class="box-container">
+                <div class="box" id="box1">
+                    <h3><i class="fa-solid fa-hand-point-right"></i>Body and Mind</h3>
+                    <p>To change your body you must first change your mind.</p>
+                </div>
+                <div class="box" id="box2">
+                    <h3><i class="fa-solid fa-hand-point-right"></i>Lifestyle</h3>
+                    <p>Learn about and implement vital lifestyle habits to start feeling amazing on the inside and
+                        looking great on the outside.</p>
+                </div>
+                <div class="box" id="box3">
+                    <h3><i class="fa-solid fa-hand-point-right"></i>Exercise</h3>
+                    <p>Tailored, structured, time-efficient & progressive exercise programme to cater for your
+                        requirements and goals</p>
+                </div>
+                <div class="box" id="box4">
+                    <h3><i class="fa-solid fa-hand-point-right"></i>Nutrition</h3>
+                    <p>Learn about and implement nutritional strategies that will transform your physique without
+                        feeling starved.</p>
+                </div>
+            </div>
+            <a href="#about-title" class="btn" onclick="visible()">Read more</a>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- features section starts -->
+    <section class="features" id="features">
+        <h1 class="heading"><span>Gym Features</span></h1>
+        <div class="box-container" id="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="Images/f-img-1.jpg" alt="Features 1">
+                </div>
+                <div class="content">
+                    <img src="Images/icon-1.png" alt="Icon 1">
+                    <h3>Body Building</h3>
+                    <p>Learn how to build muscle, burn fat and stay motivated.</p>
+                    <a href="#box-container" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="box second">
+                <div class="image">
+                    <img src="Images/f-img-2.jpg" alt="Features 2">
+                </div>
+                <div class="content">
+                    <img src="Images/icon-2.png" alt="Icon 2">
+                    <h3>Gym For Men</h3>
+                    <p>Guides you to become a healthier and happier man.</p>
+                    <a href="#box-container" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="Images/f-img-3.jpg" alt="Features 3">
+                </div>
+                <div class="content">
+                    <img src="Images/icon-3.png" alt="Icon 3">
+                    <h3>Gym For Women</h3>
+                    <p>Empowering women to gain confidence, sharper minds and stronger bodies</p>
+                    <a href="#box-container" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features section ends -->
+
+    <!-- pricing section starts -->
+    <section class="pricing" id="pricing">
+        <div class="information">
+            <span>Pricing Plan</span>
+            <h3>Affordable pricing plan for you</h3>
+            <p>
+                Get expert advive on workout routines, nutrition and celebrity training secrets to live a longer and stronger life.
+            </p>
+            <p> <i class="fa-solid fa-check"></i> Cardio Exercise </p>
+            <p> <i class="fa-solid fa-check"></i> Weight Lifting </p>
+            <p> <i class="fa-solid fa-check"></i> Diet Plans </p>
+            <p> <i class="fa-solid fa-check"></i> Overall Results </p>
+            <a href="#pricing" class="btn">View all plans</a>
+        </div>
+
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <div class="price"><span>$</span>20<span>/mo</span></div>
+            <div class="list">
+                <p> <i class="fa-solid fa-check"></i> Cardio Exercise </p>
+                <p> <i class="fa-solid fa-check"></i> Weight Lifting </p>
+                <p> <i class="fa-solid fa-xmark text-danger"></i> Yoga </p>
+                <p> <i class="fa-solid fa-check"></i> Diet Plans </p>
+                <p> <i class="fa-solid fa-check"></i> Overall Results </p>
+                <p> <i class="fa-solid fa-xmark text-danger"></i> Personal Training </p>
+            </div>
+            <a href="#pricing" class="btn">Get Started</a>
+        </div>
+
+        <div class="plan standard">
+            <h3>Standard Plan</h3>
+            <div class="price"><span>$</span>30<span>/mo</span></div>
+            <div class="list">
+                <p> <i class="fa-solid fa-check"></i> Cardio Exercise </p>
+                <p> <i class="fa-solid fa-check"></i> Weight Lifting </p>
+                <p> <i class="fa-solid fa-check"></i> Yoga </p>
+                <p> <i class="fa-solid fa-check"></i> Diet Plans </p>
+                <p> <i class="fa-solid fa-check"></i> Overall Results </p>
+                <p> <i class="fa-solid fa-xmark text-danger"></i> Personal Training </p>
+            </div>
+            <a href="#pricing" class="btn">Get Started</a>
+        </div>
+
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <div class="price"><span>$</span>50<span>/mo</span></div>
+            <div class="list">
+                <p> <i class="fa-solid fa-check"></i> Cardio Exercise </p>
+                <p> <i class="fa-solid fa-check"></i> Weight Lifting </p>
+                <p> <i class="fa-solid fa-check"></i> Yoga </p>
+                <p> <i class="fa-solid fa-check"></i> Diet Plans </p>
+                <p> <i class="fa-solid fa-check"></i> Overall Results </p>
+                <p> <i class="fa-solid fa-check"></i> Personal Training </p>
+            </div>
+            <a href="#pricing" class="btn">Get Started</a>
+        </div>
+    </section>
+    <!-- pricing section ends -->
+
+    <!-- team section startrs -->
+    <section class="team" id="team">
+        <h1 class="heading"><span>Our Team</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/trainer-1.jpg" alt="trainer-1">
+                <div class="content">
+                    <span>Fitness Instructor</span>
+                    <h3>Christian Daw</h3>
+                    <div class="share">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Images/trainer-2.jpg" alt="trainer-2">
+                <div class="content">
+                    <span>Yoga Instructor</span>
+                    <h3>Emile Rose</h3>
+                    <div class="share">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Images/trainer-3.jpg" alt="trainer-3">
+                <div class="content">
+                    <span>Personal Trainer</span>
+                    <h3>Ryan Williams</h3>
+                    <div class="share">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Images/trainer-4.jpg" alt="trainer-4">
+                <div class="content">
+                    <span>Nutrition Consultant</span>
+                    <h3>Jennifer Boutella</h3>
+                    <div class="share">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section ends -->
+
+    <!-- banner section starts -->
+    <section class="banner" id="banner">
+        <span>Join us now</span>
+        <h3>Get upto 50% discount</h3>
+        <p>
+            Special offer for all new members. Get more workout for less.
+        </p>
+        <a href="#banner" class="btn">Get discount</a>
+    </section>
+    <!-- banner section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <div class="information">
+            <span>Testimonials</span>
+            <h3>What Our Client Says</h3>
+            <p>
+                We place huge value on strong relationships and have seen the benefit they bring to our business.
+                Member's feedback is vital in helping us to get it right.
+            </p>
+            <a href="#review" class="btn">See all reveiws</a>
+        </div>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <p>“The trainers at Fitness 365 have helped me reach my fitness goals beyond anything I could’ve
+                        hoped for. They truly care.”</p>
+                    <div class="user">
+                        <img src="Images/pic-1.png" alt="reviewer-1">
+                        <div class="info">
+                            <h3>DANIAL JACK</h3>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>“The atmosphere at Fitness 365 is amazing, the people are even better. All in all, it is a great
+                        place to work out.”</p>
+                    <div class="user">
+                        <img src="Images/pic-2.png" alt="reviewer-2">
+                        <div class="info">
+                            <h3>JESSICA EMMA</h3>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>“The facilities at Fitness 365 stood out to me the most. They are well maintained and have high
+                        quality equipment.”</p>
+                    <div class="user">
+                        <img src="Images/pic-3.png" alt="reviewer-3">
+                        <div class="info">
+                            <h3>STEVEN MASSEY</h3>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>“No bad things to say about Fitness 365, they are top notch at every corner and truly take care
+                        of their customers.”</p>
+                    <div class="user">
+                        <img src="Images/pic-4.png" alt="reviewer-4">
+                        <div class="info">
+                            <h3>CHRISSY CARROLL</h3>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- blog section starts -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>Daily Posts</span></h1>
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="Images/blog-3.jpg" alt="blog-1">
+                    </div>
+                    <div class="content">
+                        <div class="link"><a href="#">by user</a><span>|</span><a href="#">18th June, 2022</a></div>
+                        <h3>Ultimate Guide To Starting Your Fitness Journey</h3>
+                        <p>Thinking about starting your fitness journey? But feeling overwhelmed as...</p>
+                        <a href="#blogs" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="Images/blog-2.jpg" alt="blog-2">
+                    </div>
+                    <div class="content">
+                        <div class="link"><a href="#">by user</a><span>|</span><a href="#">18th June, 2022</a></div>
+                        <h3>Reasons Why Morning Exercise is important for a healthy lifestyle</h3>
+                        <p>Morning Exercise and its benefits to your Health. A healthy...</p>
+                        <a href="#blogs" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="Images/blog-1.jpg" alt="blog-3">
+                    </div>
+                    <div class="content">
+                        <div class="link"><a href="#">by user</a><span>|</span><a href="#">18th June, 2022</a></div>
+                        <h3>How to deal with muscle soreness from exercise?</h3>
+                        <p>Muscle soreness is extremely common for fitness enthusiasts. Likewise, it can...</p>
+                        <a href="#blogs" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="Images/blog-4.jpg" alt="blog-4">
+                    </div>
+                    <div class="content">
+                        <div class="link"><a href="#">by user</a><span>|</span><a href="#">18th June, 2022</a></div>
+                        <h3>Gymtimidation – What is it and How to Overcome It</h3>
+                        <p>Have you ever experienced anxiety at the thought of going to the gym? You’re not alone...</p>
+                        <a href="#blogs" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="Images/blog-5.jpg" alt="blog-5">
+                    </div>
+                    <div class="content">
+                        <div class="link"><a href="#">by user</a><span>|</span><a href="#">18th June, 2022</a></div>
+                        <h3>Fitness is not about being better than someone else</h3>
+                        <p>Regular physical activity is one of the most important things you can do for your health.
+                            Being...</p>
+                        <a href="#blogs" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- blog section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a class="link" href="#home">home</a>
+                <a class="link" href="#about">about</a>
+                <a class="link" href="#features">features</a>
+                <a class="link" href="#pricing">pricing</a>
+                <a class="link" href="#team">team</a>
+                <a class="link" href="#blogs">blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Opening Hours</h3>
+                <p> Monday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Tuesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Wednesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Thursday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Friday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Saturday : <i> 7:00am - 10:30pm </i> </p>
+                <p> Sunday : <i> Closed </i> </p>
+            </div>
+
+            <div class="box">
+                <h3>Contacts</h3>
+                <p> <i class="fa-solid fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fa-solid fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fa-solid fa-envelope"></i> reachthegym@gmail.com </p>
+                <p> <i class="fa-solid fa-map-pin"></i> Kolkata-700079, India </p>
+                <div class="share">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="Enter your email" id="">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <div class="creator">
+        <p>Developed by <span><a href="https://www.linkedin.com/in/rahul-kumar-mazumder-084117230/">Rahul Kumar Mazumder</a></span> | All Rights Reserved</p>
+    </div>
+
+
+
+
+    <!-- swiper javascript file link from swiper.js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom javascript file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
